@@ -1,0 +1,7 @@
+{
+  "baseURL": "https://www.saucedemo.com/",
+  "timeout": 60000,
+  "navigationTimeout": 30000,
+  "actionTimeout": 15000,
+  "screenshotPath": "reports/screenshots"
+}

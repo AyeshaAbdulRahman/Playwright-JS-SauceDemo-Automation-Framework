@@ -1,0 +1,30 @@
+{
+  "name": "saucedemo-playwright-framework",
+  "version": "1.0.0",
+  "description": "Industry-standard Playwright automation framework for SauceDemo",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:positive": "playwright test tests/positive",
+    "test:negative": "playwright test tests/negative",
+    "test:functional": "playwright test tests/functional",
+    "test:report": "playwright test && allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "saucedemo",
+    "automation",
+    "pom",
+    "allure"
+  ],
+  "author": "Ayesha Rahman",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "allure-commandline": "^2.42.1",
+    "allure-playwright": "^3.10.0"
+  }
+}
